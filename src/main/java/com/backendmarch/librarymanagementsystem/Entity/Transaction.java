@@ -1,7 +1,6 @@
 package com.backendmarch.librarymanagementsystem.Entity;
 
 import com.backendmarch.librarymanagementsystem.Enum.TransactionStatus;
-import com.backendmarch.librarymanagementsystem.LibraryManagementSystemApplication;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,6 +28,7 @@ public class Transaction {
     private Date transactionDate;
 
     private boolean isIssueOperation;
+    private String Message;
 
     @ManyToOne
     @JoinColumn
